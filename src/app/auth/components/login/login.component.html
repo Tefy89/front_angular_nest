@@ -8,5 +8,5 @@
     <label>Ingrese Contraseña: </label>
     <input type="password" formControlName="password">
     <br>
-    <button (click)="funIngresar()">Ingresar</button>
+    <button (click)="funIngresar()" [disabled]="! loginForm.valid">Ingresar</button>
 </form>
